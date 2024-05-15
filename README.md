@@ -12,6 +12,7 @@
 | 5 | for...in 和 for...of的区别 | ✅2024/5/15 | for...in 只能遍历对象和数组、for...of 可以遍历对象、数组、字符串等所有拥有 @@iterator 可迭代协议的遍历器内容 |
 | 6 | 改变this指向的方法有哪些 | ✅2024/5/15 | apply、call、bind、箭头函数、addEventListen、对象函数属性调用、闭包存储this |
 | 7 | 如何实现一个call方法？说思路 | - |
+| + | Generator 理解 | - |
 | 8 | 数组的reduce方法有用过吗？具体的用途？ | - |
 | 9 | 用过git吗？常用指令？ | - |
 | 10 | webpack的rule，loader的执行流是怎么样的？ | - |
