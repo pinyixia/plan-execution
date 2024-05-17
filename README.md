@@ -13,7 +13,7 @@
 | 6 | 改变this指向的方法有哪些 | ✅2024/5/15 | apply、call、bind、箭头函数、addEventListen、对象函数属性调用、闭包存储this |
 | 7 | 如何实现一个call方法？说思路 | ✅2024/5/16 | 通过对象方法调用的方式改变this指向并返回结果，参考 call 手写：https://blog.csdn.net/zsm4623/article/details/137903281
 | + | 函数调用有几种会改变 this 指向 | ✅2024/5/16 | 普通函数调用指向 window，对象方法调用指向当前的对象，构造函数方式调用指向实例对象，事件绑定方式调用指向当前的dom，定时器内部调用指向window，自执行函数调用指向window |
-| + | Generator 理解 | - |
+| + | Generator 理解 | ✅2024/5/17 |
 | 8 | 数组的reduce方法有用过吗？具体的用途？ | - |
 | 9 | 用过git吗？常用指令？ | - |
 | 10 | webpack的rule，loader的执行流是怎么样的？ | - |
