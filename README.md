@@ -18,7 +18,7 @@
 | 9 | 用过git吗？常用指令？ | ✅2024/5/17 | clone(下载仓库)、pull(拉取最新代码)、commit(提交代码：-a 提交到暂存区、-m 暂存区提交到本地仓库)、push(本地仓库提交到远程git仓库)、reset(回退版本和commit提交)、log(查看提交历史)、status(查看修改状态)、merge(合并代码分支)、checkout(切换分支、-b 创建并切换到新分支)、switch(新版本创建分支、-c 创建并切换到新分支)、branch(创建分支、-d 删除分支)、remote(操作远程git仓库) |
 | 10 | webpack的rule，loader的执行流是怎么样的？ | ✅2024/5/20 | rule 是 webpack 中配置文件的处理规则，在每个规则中对匹配的文件指定具体的 loader 包处理代码转换 |
 | 11 | 有做过工程化的事情吗？说一下你对工程化的了解，对webpack的了解 | ✅2024/5/20 | 1、工程化指的是将项目中各个环节规范化，以至于提升开发效率和代码质量。可以说工程化现在在我们项目中无处不在。我们使用react/vue进行代码组件化、模块化的开发，使用webpack进行代码构建打包和 CICD 自动化部署。2、webpack 给我们提供了代码打包功能，通过rule规则对项目代码和静态资源进行内容转换和资源合并，它也属于项目工程化。比如提供了本地服务器，可以再本地启动react/vue等项目，支持开发react代码时可以实时编译看效果。还支持ES6的代码转换，让开发者可以进行模块化开发。 |
-| 12 | 有自己写过loader、plugin吗？具体讲一下 | - |
+| 12 | 有自己写过loader、plugin吗？具体讲一下 | - | [loader 开发](https://github.com/joeyguo/blog/issues/4)、[plugin 开发](https://github.com/lcxfs1991/blog/issues/1) |
 | 13 | CI/CD了解吗？ | ✅2024/5/21 | 持续集成/持续交付(自动化流程和工具)指的是自动化部署，像Jenkins、Docker、github、gitlab都支持配置CICD自动化部署。我自己用过Jenkins和gitlab自动化部署，配置过[gitlab的CICD](https://docs.gitlab.com/ee/ci/)部署文件。 |
 | 14 | 设计模式了解吗？讲一下了解的、用过的 | - |
 | 15 | 有做过性能优化吗？页面非常卡顿，卡顿不是因为数据很多，而是因为有很多计算，导致掉帧了，如何找出卡顿的原因？如何去debug找出来？如果有几百个函数需要执行，怎么去处理？ | - |
