@@ -22,6 +22,7 @@
 | 13 | CI/CD了解吗？ | ✅2024/5/21 | 持续集成/持续交付(自动化流程和工具)指的是自动化部署，像Jenkins、Docker、github、gitlab都支持配置CICD自动化部署。我自己用过Jenkins和gitlab自动化部署，配置过[gitlab的CICD](https://docs.gitlab.com/ee/ci/)部署文件。 |
 | + | webpack 打包流程原理 | ✅2024/5/24 | webpack 分[4个阶段](https://mp.weixin.qq.com/s/SbJNbSVzSPSKBe2YStn2Zw)：初始化阶段、构建阶段、生成阶段、写入阶段。初始化阶段：处理process.args、webpack.config.js的用户参数，加载webpack需要的plugins插件。构建阶段：将JavaScript代码解析成 AST 对象，遍历出所需的依赖文件(引用的组件和图片)生成AST module对象集合。生成阶段：将获取到的module集合根据配置的entry规则生成chunks输出。写入阶段：将chunks转化为assets写入到系统。 |
 | + | webpack 怎么[提升性能](https://mp.weixin.qq.com/s?__biz=Mzg3OTYwMjcxMA==&mid=2247484819&idx=1&sn=7ce2c5d905ee985371751f5e72569905&chksm=cf00b8eaf87731fc6ecdc3d3291e896a3038be10b74a8ce6efe52b61af340d7b30482d9f504b&cur_album_id=1856066636953272321&scene=190#rd)？ | ✅2024/5/27 |
+| + | Webpack 和 Vite 的区别，为什么 Vite 那么快 | ✅2024/5/27 | 两个都是前端项目打包工具，不同的是 vite 是基于 esbuild 基础上二次开发的，因为 esbuild 只专注于 js、ts 的代码转换，去除了浏览器向下兼容的代码块，和 npm 按需打包。所以速度非常的快。vite 的上手也很简单，是开箱即用的。而 webpack 需要自己配置各种插件。vite 对标的应该是 create-react-app。 |
 | 14 | 设计模式了解吗？讲一下了解的、用过的 | - |
 | 15 | 有做过性能优化吗？页面非常卡顿，卡顿不是因为数据很多，而是因为有很多计算，导致掉帧了，如何找出卡顿的原因？如何去debug找出来？如果有几百个函数需要执行，怎么去处理？ | - |
 | 16 | 讲讲js数据类型 | - |
