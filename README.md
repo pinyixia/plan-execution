@@ -33,7 +33,7 @@
 | 23 | new一个对象的时候会做些什么？ | - |
 | 24 | 节流函数的实现 | - |
 | 25 | 跨域问题 | - |
-| 26 | webpack的[module、bundle、chunk](https://mp.weixin.qq.com/s?__biz=Mzg3OTYwMjcxMA==&mid=2247484029&idx=1&sn=7862737524e799c5eaf1605325171e32&chksm=cf00bf04f8773612682f4650be2f78255912d0ca8ecafff1bd647a8a692ae28098436975908f&cur_album_id=1856066636953272321&scene=190#rd)分别指的是什么？ | ✅2024/5/27 | 三个存在于不同的打包阶段。webpack打包流程分为初始化阶段、构建阶段、生成阶段、写入阶段。module是存在于构建阶段，webpack根据初始化阶段的配置文件entry入口逐层找到依赖资源转化成ATS对象树(包含依赖路径、上下文、内容信息)存入为Module对象子类，然后再生成阶段对module的每个子类进行解析，生成chunk块，最后将chunk块拆解合并打包输出一个性能更高的bundle文件。 |
+| 26 | webpack的[module、bundle、chunk](https://mp.weixin.qq.com/s?__biz=Mzg3OTYwMjcxMA==&mid=2247484029&idx=1&sn=7862737524e799c5eaf1605325171e32&chksm=cf00bf04f8773612682f4650be2f78255912d0ca8ecafff1bd647a8a692ae28098436975908f&cur_album_id=1856066636953272321&scene=190#rd)分别指的是什么？ | ✅2024/5/27 | 三个存在于不同的打包阶段。webpack打包流程分为初始化阶段、构建阶段、生成阶段、写入阶段。module是存在于构建阶段，webpack根据初始化阶段配置的entry入口文件逐层循环找到依赖资源转化成ATS对象树(包含依赖路径、上下文、内容信息)存入为Module对象子类，然后再生成阶段对module的每个子类进行解析，生成chunk块，最后将chunk块拆解合并打包输出一个性能更高的bundle文件。 |
 | 27 | 手写防抖、节流 | - |
 | 28 | on、once、off、emit区别 | - |
 | 29 | 实际开发遇到的重难点。 | - |
