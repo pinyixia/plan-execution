@@ -55,7 +55,7 @@
 | 44 | 布局适配问题，响应式，rem，em，flex等 | - |
 | 45 | 低代码如何设计的 | - |
 | 46 | react路由原理 | - |
-| 47 | react生命周期 | - |
+| 47 | react生命周期 | ✅2024/5/30 | constructor(挂在前)、static getDerivedStateFromProps(组件挂载和更新时调用，返回为state的值)、componentDidMount(挂在后)、shouldComponentUpdate(性能优化,React判断是否要渲染(false,true))、getSnapShotBeforeUpdate(更新DOM之前调用，返回的内容传给componentDidUpdate)、render(渲染要呈现的内容)、componentDidUpdate(组件更新后)、componentWillUnmount(组件销毁前) |
 | 48 | 什么是回调地狱，如何解决 | - |
 | 49 | js文件相互引用有什么问题？如何解决 | - |
 | 50 | 一个很大的json文件，前端读取如何优化 | - |
