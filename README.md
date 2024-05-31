@@ -31,8 +31,8 @@
 | 19 | 微任务、宏任务描述一下 | - |
 | 20 | 介绍下最近的一个项目 | - |
 | 21 | 研究vue2/vue3的原理 | - |
-| 22 | es6的class和es5的function的关系？ | - |
-| 23 | new一个对象的时候会做些什么？ | - |
+| 22 | es6的class和es5的function的关系？ | ✅2024/5/31 | class是function的语法糖，但本质上没有区别。在继承和new的时候都是在操作原型链。在语法上class的会简洁直观很多。 |
+| 23 | new一个对象的时候会做些什么？ | ✅2024/5/31 | 首先会创建一个__proto__原型链指向构造函数的prototype原型对象的新对象。2.然后将构造函数的this绑定到当前的新对象上。4.返回创建的新对象。 |
 | 24 | React的Context理解 | ✅2024/5/31 | 这个是React提供的上下文组件，可以方便的让父级的值逐层提供给子组件。不用使用props一层一层的传递下去，可以直接在当前使用到的层级直接引入。但有问题的是当值发生改变，那所有的子组件都要重新渲染。这个在类组件没优化方案，但在函数组件可以使用useMemo来优化，这个hook函数可以避免多余的React消耗。 |
 | 25 | 跨域问题 | - |
 | 26 | webpack的[module、bundle、chunk](https://mp.weixin.qq.com/s?__biz=Mzg3OTYwMjcxMA==&mid=2247484029&idx=1&sn=7862737524e799c5eaf1605325171e32&chksm=cf00bf04f8773612682f4650be2f78255912d0ca8ecafff1bd647a8a692ae28098436975908f&cur_album_id=1856066636953272321&scene=190#rd)分别指的是什么？ | ✅2024/5/27 | 三个存在于不同的打包阶段。webpack打包流程分为初始化阶段、构建阶段、生成阶段、写入阶段。module是存在于构建阶段，webpack根据初始化阶段配置的entry入口文件转化成ATS对象树并逐层循环找到依赖资源存入Module对象(一个入口文件一个module对象，依赖路径、上下文、内容信息等存入当前对象下)，然后再生成阶段对module的每个对象和上下文依赖文件进行解析和[分包](https://mp.weixin.qq.com/s?__biz=Mzg3OTYwMjcxMA==&mid=2247484868&idx=1&sn=0c752051da065d4eb2c6dbc492d619c4&chksm=cf00b8bdf87731ab17493688f8ace26be51f6f2bc6d16ce2e443a57368fef5ece719cd120c3d&cur_album_id=1856066636953272321&scene=190#rd)，生成chunk块(也可以称包，实际对文件内容的输出)，最后将所有的chunk块拆解合并以最优的结果打包输出一个bundle文件（可以理解成是一个chunks集合）。 |
