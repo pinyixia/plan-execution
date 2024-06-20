@@ -28,7 +28,7 @@
 | 16 | 讲讲js数据类型 | ✅2024/5/29 | 截止目前的ECMAScript的标准，有7种基本类型和1中引用类型。String、Number、BigInt、null、undefined、Symbol、Object。ES6后新增了Symbol和BigInt，Symbol用来表示唯一的值，就算你两次输入的是统一个内容都不相等。BigInt则是用来表示Number限制之外的大整数，字面量需要在数字后面加个字母n。 |
 | 17 | 如何判断出一个元素是数组还是对象 | ✅2024/5/30 | 有3种方法：Array.isArray(arr)、arr instanceof Array、Object.prototype.toString.call(arr) |
 | 18 | 讲讲重排重绘？ | ✅2024/5/30 | 1、当我们输入URL访问一个页面的时候，服务器会返回页面的源代码。2、浏览器接收到代码会将HTML解析成DOM树，CSS解析成CSSOM树。然后将这两个对象树合并成render树，计算元素对应的样式并渲染。3、当我们改变元素的大小和位置的时候会触发浏览器的重新排版，这个过程会同时触发样式绘制。4、当我们只是改动颜色的颜色和边框，浏览器只会重新绘制页面，不会重新排版。过多的这种操作会导致浏览器资源消耗很大，导致页面卡顿，动画不通畅，CPU资源占用过高导致系统卡顿。所以就出现了React、Vue这类虚拟DOM的前端框架。 |
-| 19 | 微任务、宏任务描述一下 | - |
+| 19 | 微任务、宏任务描述一下 | ✅2024/6/20 | 浏览器执行js的机制：是通过事件循环（Event Loop）协调：调用栈（Call Stack）、任务队列（Task Queue），确保所有代码按顺序执行完。当执行一段代码的时候：第一步是将代码放入调用栈执行。当执行遇到setTimeout,setInterval,I/O事件（http请求，文件读写等）,UI渲染事件，setImmediate都放入宏任务列表，遇到Promise回调，MutationObserver回调，process.nextTick都放入微任务。在调用栈将这段代码执行完后，事件循环就会优先检查并执行微任务列表的任务。之后在检查并执行下一个宏任务列表的任务。循环直至所有宏任务和微任务都执行完。 |
 | 20 | 介绍下最近的一个项目 | - |
 | 21 | 研究vue2/vue3的原理 | - |
 | 22 | es6的class和es5的function的关系？ | ✅2024/5/31 | class是function的语法糖，但本质上没有区别。在继承和new的时候都是在操作原型链。在语法上class的会简洁直观很多。 |
